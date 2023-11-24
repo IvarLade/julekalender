@@ -1,0 +1,34 @@
+#hoved {
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif; /* Google Font 'Roboto' */
+}
+
+#hoved > div {
+    background-color: #4caf50;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.topp,.senter {
+    color: rgb(0, 0, 0); /* Svart tekst for senter div's */
+}
+
+.topp {
+    background-color: #2196f3;
+    color: white;
+    grid-column: span 6; /* Topp div vil dekke seks kolonner */
+    text-align: center;
+}
+
+a {
+    color: rgb(255, 255, 255); /* Svart tekst for senter div's */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
