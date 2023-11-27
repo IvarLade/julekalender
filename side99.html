@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godt humør generator</title>
+    <link rel="stylesheet" href="stilark/ekstra.css">
+</head>
+<body>
+
+    <h1>Godt humør generator</h1>
+
+    <div id="result"></div>
+    
+    <form id="myForm" onsubmit="event.preventDefault(); performAction();">
+        <label for="userInput">Nominer en venn, eller deg selv:</label>
+        <input type="text" id="userInput" name="userInput">
+        <button type="button" onclick="performAction()">Submit</button>
+    </form>
+
+    <script>
+        function performAction() {
+            // Generer pre tilfeldige ord 
+            var words = ['Jeg er glad for å melde at', 'Ny melding fra', 'Jeg hører at', 'Stoler på', 'Stor nyhet', 'Det varmer å høre at'];
+            var randomIndex = Math.floor(Math.random() * words.length);
+            randomPreWords =  words[randomIndex];
+
+            var userInput = document.getElementById('userInput').value;
+
+            // Generer post tilfeldige ord 
+            words = ['er kul👏👏', 'er flink i Ludo og UNO🎮🕹️🎲', 'nyter solen ☀️🌞😎', 'har mer 4G igjen på Quota🎵🎶', 'allerede er ferdig med oppgaver🎊🥳', 'gleder seg til å dele i Git✈️✈️'];
+            randomIndex = Math.floor(Math.random() * words.length);
+            randomPostWords =  words[randomIndex];
+
+            document.getElementById('result').innerHTML += "<p>" + randomPreWords + ' ' + userInput + ' ' + randomPostWords + "</p>";
+
+            // Tøm inputfelt
+            document.getElementById('userInput').value = '';
+        }
+    </script>
+</body>
+</html>
