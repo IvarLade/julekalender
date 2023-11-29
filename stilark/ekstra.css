@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;
+}
+#result {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    width: 100px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+#text {
+    text-align: center;
+}
