@@ -20,7 +20,7 @@
     font-family: 'Roboto', sans-serif; /* Google Font 'Roboto' */
 
     
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   display: flex;
   flex-direction: column;
 
@@ -48,7 +48,17 @@
     background-color: orange;
     color: rgb(0, 0, 0); /* Svart tekst for senter div's */
     text-align: left;
+    padding: 10px;
 }
+.miniboks-senter {
+    grid-column: span 2;
+    border: solid;
+    background-color: orange;
+    color: rgb(0, 0, 0); /* Svart tekst for senter div's */
+    text-align: center;
+    padding: 10px;
+}
+
 
 
 .topp,.senter {
